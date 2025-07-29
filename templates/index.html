@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ChakibBot - Chat Stylé</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .chat-box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+            background-color: #fafafa;
+            margin-bottom: 15px;
+        }
+        .chat-message {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 15px;
+            max-width: 75%;
+            display: inline-block;
+        }
+        .user {
+            background-color: #d1e7dd;
+            align-self: flex-end;
+            float: right;
+            clear: both;
+        }
+        .bot {
+            background-color: #e2e3e5;
+            align-self: flex-start;
+            float: left;
+            clear: both;
+        }
+        form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0b5ed7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur ChakibBot 🤖</h1>
+        <div class="chat-box" id="chat-box">
+            {% if response %}
+                <div class="chat-message user"><strong>Toi :</strong> {{ message }}</div>
+                <div class="chat-message bot"><strong>ChakibBot :</strong> {{ response }}</div>
+            {% endif %}
+        </div>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Ton nom" required>
+            <input type="text" name="message" placeholder="Écris ton message..." required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>

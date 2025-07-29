@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "question": "Quelle est la capitale de la France ?",
+        "reponse": "Paris"
+    },
+    {
+        "id": 2,
+        "question": "Combien font 2 + 2 ?",
+        "reponse": "4"
+    },
+    {
+        "id": 3,
+        "question": "Quel est le plus grand océan du monde ?",
+        "reponse": "L'océan Pacifique"
+    },
+    {
+        "id": 4,
+        "question": "Qui a écrit Les Misérables ?",
+        "reponse": "Victor Hugo"
+    },
+    {
+        "id": 5,
+        "question": "Quelle planète est la plus proche du Soleil ?",
+        "reponse": "Mercure"
+    },
+    {
+        "id": 6,
+        "question": "En quelle année a eu lieu la Révolution française ?",
+        "reponse": "1789"
+    },
+    {
+        "id": 7,
+        "question": "Combien de continents existe-t-il sur Terre ?",
+        "reponse": "7"
+    },
+    {
+        "id": 8,
+        "question": "Quel est l'élément chimique dont le symbole est O ?",
+        "reponse": "L’oxygène"
+    },
+    {
+        "id": 9,
+        "question": "Dans quel pays se trouve la Grande Muraille ?",
+        "reponse": "En Chine"
+    },
+    {
+        "id": 10,
+        "question": "Quel est le peintre célèbre pour La Joconde ?",
+        "reponse": "Léonard de Vinci"
+    }
+]
